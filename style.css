@@ -1016,6 +1016,82 @@ margin-right: 50px; }
     transform: scale(1.1,1.1);
 }
 
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.centered-section {
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.brand {
+    font-size: 18px;
+}
+
+.nav-list {
+    display: none;
+}
+
+.nav-list.active {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.nav-list li {
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.nav-list a {
+    font-size: 14px;
+}
+
+.hamburger-menu {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 5px;
+    }
+
+    .brand {
+        font-size: 16px;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-list li {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-list.active li {
+        display: block;
+    }
+}
+
 
 
 
